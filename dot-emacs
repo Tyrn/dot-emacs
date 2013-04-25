@@ -47,6 +47,7 @@
 
 (defun insert-combined-ellipsis-ru () (interactive)(insert "\\ldots~---~"))
 (global-set-key (kbd "s-/") 'insert-combined-ellipsis-ru)
+(global-set-key (kbd "s-M-SPC") 'toggle-input-method)
 ;;
 ;; Generated code; modify with care or not at all.
 ;;
@@ -59,7 +60,8 @@
  '(TeX-source-correlate-method (quote synctex))
  '(TeX-source-correlate-mode t)
  '(TeX-source-correlate-start-server t)
- '(TeX-view-program-list (quote (("Okular" "okular --unique %o#src:%n%b"))))
+;; '(TeX-view-program-list (quote (("Okular" "okular --unique %o#src:%n%b"))))
+ '(TeX-view-program-list (quote (("Okular" "okular --unique %o#src:%n`pwd`/./%b"))))
  '(TeX-view-program-selection (quote ((output-pdf "Okular")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
