@@ -1,3 +1,10 @@
+(server-start)
+;;
+;; Appearance
+;;
+(setq inhibit-splash-screen t)
+(set-face-foreground 'minibuffer-prompt "magenta")
+(global-linum-mode 1)
 ;;
 ;; Working package management, at last!
 ;;
