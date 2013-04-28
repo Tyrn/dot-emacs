@@ -19,7 +19,7 @@
 (setq make-backup-files nil)
 ;;
 ;; Org mode
-;;;
+;;
 ;;
 ;; AUCTeX
 ;;
