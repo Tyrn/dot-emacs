@@ -18,6 +18,9 @@
 ;;
 (setq make-backup-files nil)
 ;;
+;; Org mode
+;;
+;;
 ;; AUCTeX
 ;;
 (load "auctex.el" nil t t)
