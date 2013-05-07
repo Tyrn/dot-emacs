@@ -82,9 +82,9 @@
  '(TeX-source-correlate-method (quote synctex))
  '(TeX-source-correlate-mode t)
  '(TeX-source-correlate-start-server t)
-;; '(TeX-view-program-list (quote (("Okular" "okular --unique %o#src:%n%b"))))
  '(TeX-view-program-list (quote (("Okular" "okular --unique %o#src:%n`pwd`/./%b"))))
- '(TeX-view-program-selection (quote ((output-pdf "Okular")))))
+ '(TeX-view-program-selection (quote ((output-pdf "Okular"))))
+ '(safe-local-variable-values (quote ((eval setq TeX-engine (quote xetex))))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
