@@ -1,3 +1,9 @@
+;;
+;; My Changes:
+;;
+;; 1. ox-html, etc. commented out
+;; 2. (provide 'org-mode) added at the end
+;;
 
 ;; Custom Key Bindings
 (global-set-key (kbd "<f12>") 'org-agenda)
@@ -717,9 +723,9 @@ When not restricted, skip project and sub-project tasks, habits, and project rel
         (or next-headline (point-max))))))
 
 ;; Explicitly load required exporters
-(require 'ox-html)
-(require 'ox-latex)
-(require 'ox-ascii)
+;;(require 'ox-html)
+;;(require 'ox-latex)
+;;(require 'ox-ascii)
 
 (setq org-ditaa-jar-path "~/java/ditaa0_6b.jar")
 (setq org-plantuml-jar-path "~/java/plantuml.jar")
@@ -1740,3 +1746,4 @@ Late deadlines first, then scheduled, then non-late deadlines"
     (org-clock-out)))
 
 (run-at-time "00:59" 3600 'org-save-all-org-buffers)
+(provide 'org-mode)
