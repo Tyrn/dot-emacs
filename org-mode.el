@@ -1,8 +1,7 @@
 ;;
 ;; My Changes:
 ;;
-;; 1. ox-html, etc. commented out
-;; 2. (provide 'org-mode) added at the end
+;; 1. (provide 'org-mode) added at the end
 ;;
 
 ;; Custom Key Bindings
@@ -723,9 +722,9 @@ When not restricted, skip project and sub-project tasks, habits, and project rel
         (or next-headline (point-max))))))
 
 ;; Explicitly load required exporters
-;;(require 'ox-html)
-;;(require 'ox-latex)
-;;(require 'ox-ascii)
+(require 'ox-html)
+(require 'ox-latex)
+(require 'ox-ascii)
 
 (setq org-ditaa-jar-path "~/java/ditaa0_6b.jar")
 (setq org-plantuml-jar-path "~/java/plantuml.jar")
