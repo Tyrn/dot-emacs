@@ -2,6 +2,7 @@
 ;; My Changes:
 ;;
 ;; 1. (provide 'org-mode) added at the end
+;; 2. jar-path(s) changed
 ;;
 
 ;; Custom Key Bindings
@@ -726,8 +727,8 @@ When not restricted, skip project and sub-project tasks, habits, and project rel
 (require 'ox-latex)
 (require 'ox-ascii)
 
-(setq org-ditaa-jar-path "~/java/ditaa0_6b.jar")
-(setq org-plantuml-jar-path "~/java/plantuml.jar")
+(setq org-ditaa-jar-path "/usr/share/java/ditaa/ditaa-0_9.jar")
+(setq org-plantuml-jar-path "/opt/plantuml/plantuml.jar")
 
 (add-hook 'org-babel-after-execute-hook 'bh/display-inline-images 'append)
 
