@@ -37,6 +37,11 @@
 (require 'smex)
 (require 'bbdb)
 (require 'org-mode)
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/org-mode/contrib/lisp"))
+(require 'org-checklist)
+
+(setq org-agenda-files (quote ("~/spaces/notes"
+                               "~/spaces/notes/working-org-diary")))
 ;;
 ;; AUCTeX
 ;;
