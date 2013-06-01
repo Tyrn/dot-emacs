@@ -41,7 +41,9 @@
 (require 'org-checklist)
 
 (setq org-agenda-files (quote ("~/spaces/notes"
-                               "~/spaces/notes/working-org-diary")))
+                               "~/spaces/notes/working-org-diary"
+                               "~/spaces/notes/regulations"
+ )))
 ;;
 ;; AUCTeX
 ;;
