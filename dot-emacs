@@ -6,6 +6,10 @@
 (set-face-foreground 'minibuffer-prompt "magenta")
 (global-linum-mode 1)
 ;;
+;; Backup
+;;
+(setq make-backup-files nil)
+;;
 ;; Working package management, at last!
 ;;
 ;; M-x package-list-packages
@@ -14,9 +18,12 @@
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 ;;
-;; Backup
+;; Haskell mode
 ;;
-(setq make-backup-files nil)
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
 ;;
 ;; Org mode
 ;;
